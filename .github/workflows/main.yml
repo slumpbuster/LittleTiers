@@ -1,9 +1,6 @@
 name: Deploy
 
-on:
-  push:
-    branches:
-      - master
+on: [push]
 
 jobs:
   build:
@@ -15,6 +12,3 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: mitcicdlittletiers
           heroku_email: djsellers17@gmail.com
-
-
-
